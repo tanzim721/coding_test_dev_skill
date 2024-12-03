@@ -8,8 +8,8 @@ use App\Http\Controllers\UserController;
 // });
 
 
-Route::get('/login', [UserController::class, 'showLoginForm'])->name('login');
-Route::post('/login', [UserController::class, 'login']);
+Route::get('/', [UserController::class, 'showLoginForm'])->name('login');
+Route::post('/', [UserController::class, 'login']);
 
 
 Route::middleware(['auth'])->group(function () {
