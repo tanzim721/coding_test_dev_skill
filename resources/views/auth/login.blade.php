@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body {
             background-color: #f8f9fa;
@@ -34,7 +35,6 @@
             background-color: #218838;
         }
     </style>
-    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -48,7 +48,9 @@
             <div class="card-body">
                 <h3 class="text-center mb-4 d-flex justify-content-between">
                     <span>Sign In</span>
-                    <i class="fab fa-facebook"></i>
+                    <div class="d-flex justify-content-end">
+                        <i class="fa fa-facebook btn btn-light btn-sm me-2"></i><i class="fa fa-twitter btn btn-light btn-sm"></i>
+                    </div>
                 </h3>
                 <form method="POST" action="{{ route('login') }}" class="p-4 shadow-lg rounded bg-white">
                     @csrf
